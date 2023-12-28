@@ -47,7 +47,7 @@ struct AnimalDetailView: View {
                 Group {
                     HeadingView(headingImage: "questionmark.circle", headingText: "Did you know?")
                     
-                    //InsetFactView(animal: animal)
+                    InsetFactView(animal: animal)
                 }
                 .padding(.horizontal)
                 
@@ -65,7 +65,7 @@ struct AnimalDetailView: View {
                 Group {
                     HeadingView(headingImage: "map", headingText: "National Parks")
                     
-                    //InsetMapView()
+                    InsetMapView()
                 }
                 .padding(.horizontal)
                 
@@ -73,7 +73,7 @@ struct AnimalDetailView: View {
                 Group {
                     HeadingView(headingImage: "books.vertical", headingText: "Learn More")
                     
-                    //ExternalWeblinkView(animal: animal)
+                    ExternalWeblinkView(animal: animal)
                 }
                 .padding(.horizontal)
                 

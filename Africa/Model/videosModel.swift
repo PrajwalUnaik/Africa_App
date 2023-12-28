@@ -6,3 +6,19 @@
 //
 
 import Foundation
+import SwiftUI
+
+struct Video: Codable,Identifiable {
+    let id, name, headline: String
+    
+    var thumbnail:String
+    {
+        "video-\(id)"
+    }
+
+}
+
+
+
+//computed property
+
