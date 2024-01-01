@@ -8,12 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
+    let animals: [Animal] = Bundle.main.decode("animals.json")
+    
     var body: some View {
         
         // MARK: - properties
-        
-        let animals: [Animal] = Bundle.main.decode("animals.json")
-        
         NavigationView {
             List{
                 CoverView()
@@ -29,6 +28,7 @@ struct ContentView: View {
             }
             .navigationBarTitle("Africa".uppercased(), displayMode: .large)
         }
+        
     }
 }
 

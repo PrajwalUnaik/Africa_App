@@ -82,11 +82,7 @@ struct MapView: View {
               .padding()
               , alignment: .top
             )
-        
-        
-        
-        
-        
+        .ignoresSafeArea()
     }
 }
 
